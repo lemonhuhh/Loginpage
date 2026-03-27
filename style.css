@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('/assets/lufffy.webp') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 35px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+    color: white;
+
+    animation: float 6s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* INPUTS */
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+    background: rgba(255,255,255,0.3);
+    color: black;
+}
+
+.input-box input::placeholder {
+    color: #333;
+}
+
+/* FORGOT */
+.forgot {
+    text-align: right;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.8);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* OR TEXT */
+.or {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* SOCIAL ICONS */
+.social {
+    text-align: center;
+}
+
+.social i {
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+    color: aliceblue;
+}
