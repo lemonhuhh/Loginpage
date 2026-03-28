@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Reward Welcome</title>
+  <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
-    <h1>Welcome sir/madam</h1>
+
+<div class="background"></div>
+
+<!-- Welcome Screen -->
+<div class="container" id="welcomeBox">
+  <h1>Welcome 🎉</h1>
+  <p>Click below to reveal your reward</p>
+  <button onclick="showReward()">Open Reward</button>
+</div>
+
+<!-- Reward Screen -->
+<div class="reward hidden" id="rewardBox">
+  <h1>You smile, You lose</h1>
+
+  <video id="rewardVideo" controls autoplay>
+    <source src="assets/funny.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <p class="message"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
