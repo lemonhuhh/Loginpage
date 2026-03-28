@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background: url('/assets/lufffy.webp') no-repeat center/cover;
+    background: url('/assets/back.jpg') no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
